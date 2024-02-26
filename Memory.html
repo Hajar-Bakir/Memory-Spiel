@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Die Deklaration des Dokumenttyps (DOCTYPE) gibt den Browsern an, welche Version von HTML verwendet wird. -->
+    <meta charset="UTF-8">
+    <!-- Festlegen der Zeichenkodierung auf UTF-8, um sicherzustellen, dass Sonderzeichen korrekt dargestellt werden. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Die Metadaten für die Ansichtseinstellungen auf Mobilgeräten. -->
+    <title>Memory-Spiel</title>
+    <!-- Titel des HTML-Dokuments, der im Browser-Tab angezeigt wird. -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Verknüpfung mit einer externen CSS-Datei für das Styling der Seite. -->
+    <script src="script.js" defer></script>
+    <!-- Einbindung einer externen JavaScript-Datei mit der Option "defer", um das Laden des Skripts nach dem Parsen des HTML zu verzögern. -->
+</head>
+<body>
+    <div class="game">
+        <!-- Hier beginnt der Hauptteil der Webseite für das Memory-Spiel. -->
+        <div class="controls">
+            <!-- Ein Container für die Steuerungselemente des Spiels. -->
+            <button>Start</button>
+            <!-- Ein Start-Button, um das Spiel zu beginnen. -->
+            <div class="stats">
+                <!-- Container für Spielstatistiken. -->
+                <div class="moves">0 moves</div>
+                <!-- Anzeige der Anzahl der Spielzüge. -->
+                <div class="timer">Time: 0 sec</div>
+                <!-- Anzeige der verstrichenen Spielzeit. -->
+            </div>
+        </div>
+        <div class="board-container">
+            <!-- Ein Container für das Spielfeld des Memory-Spiels. -->
+            <div class="board" data-dimension="4"></div>
+            <!-- Das Spielfeld selbst mit einer Datenattribute "data-dimension", das die Dimension des Spielfelds (4x4) angibt. -->
+            <div class="win">You won!</div>
+            <!-- Eine Meldung, die angezeigt wird, wenn der Spieler das Spiel gewonnen hat. -->
+        </div>
+    </div>
+</body>
+</html>
